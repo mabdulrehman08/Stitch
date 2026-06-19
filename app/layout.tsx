@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
-
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Stitch | AI Memory Vlogs",
+export const metadata = {
+  title: "Stitch | Mini Vlog Journal",
   description:
-    "A premium prototype for Stitch, an AI product that turns camera rolls into cinematic stories.",
+    "A mobile-first Stitch prototype for multi-video mini vlogs, journal playback, and shared memory flows.",
 };
 
 export default function RootLayout({

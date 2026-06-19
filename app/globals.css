@@ -18,8 +18,11 @@ html {
 
 body {
   min-height: 100vh;
-  background: #000000;
+  background:
+    radial-gradient(circle at top, rgba(128, 145, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, #0b0d11 0%, #07080b 100%);
   color: #ffffff;
+  font-feature-settings: "rlig" 1, "calt" 1;
 }
 
 ::selection {
@@ -43,4 +46,11 @@ body {
 
 .mask-fade {
   mask-image: linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+}
+
+.stitch-phone {
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.09), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(24px);
 }
