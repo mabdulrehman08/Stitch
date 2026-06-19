@@ -1,5 +1,6 @@
 node_modules
 .next
+.localappdata
 out
 dist
 .env*
