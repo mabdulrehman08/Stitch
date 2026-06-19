@@ -37,7 +37,7 @@ export default function HomePage() {
           <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
             A cleaner Stitch frontend that actually feels hire-worthy.
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
             This version is intentionally simple: white background, sharper hierarchy, real multi-clip
             upload, and enough product thinking to make the builder look cracked in a demo.
           </p>
@@ -86,7 +86,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-slate-950">{item.step}</p>
-                      <p className="mt-1 text-sm leading-6 text-slate-600">{item.body}</p>
+                      <p className="mt-1 text-sm leading-6 text-slate-700">{item.body}</p>
                     </div>
                   </div>
                 </div>

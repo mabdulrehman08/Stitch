@@ -31,7 +31,7 @@ export default function ReviewsPage() {
             <h1 className="mt-3 text-5xl font-semibold tracking-tight text-slate-950">
               A page where people can test it, react to it, and believe it.
             </h1>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
+            <p className="mt-5 text-lg leading-8 text-slate-700">
               This route is built for proof. Someone can upload two or more clips, see generated cuts,
               and leave with the sense that this builder understands product, not just visuals.
             </p>
@@ -61,7 +61,7 @@ export default function ReviewsPage() {
                       <Star key={index} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <p className="mt-4 text-base leading-7 text-slate-700">&ldquo;{item.quote}&rdquo;</p>
+                  <p className="mt-4 text-base leading-7 text-slate-800">&ldquo;{item.quote}&rdquo;</p>
                   <p className="mt-4 text-sm font-semibold text-slate-950">{item.name}</p>
                 </CardContent>
               </Card>

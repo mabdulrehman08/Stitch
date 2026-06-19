@@ -37,7 +37,7 @@ export default function FeaturesPage() {
           <h1 className="mt-3 text-5xl font-semibold tracking-tight text-slate-950">
             The next page shows product thinking, not just screens.
           </h1>
-          <p className="mt-5 text-lg leading-8 text-slate-600">
+          <p className="mt-5 text-lg leading-8 text-slate-700">
             This is where you prove you can go beyond a single demo interaction: roadmap sense,
             feature framing, and a believable point of view about where the product should go.
           </p>
@@ -51,7 +51,7 @@ export default function FeaturesPage() {
                   <item.icon className="h-5 w-5" />
                 </div>
                 <h2 className="mt-5 text-xl font-semibold text-slate-950">{item.title}</h2>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{item.body}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-700">{item.body}</p>
               </CardContent>
             </Card>
           ))}

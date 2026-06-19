@@ -209,7 +209,7 @@ export function MultiClipStudio({
                 <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950">
                   {title}
                 </h2>
-                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">{intro}</p>
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-700">{intro}</p>
               </div>
 
               <input
@@ -230,7 +230,7 @@ export function MultiClipStudio({
 
           <div className="grid gap-5 p-6 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="space-y-5">
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div className="rounded-2xl border border-slate-300 bg-slate-100 p-4">
                 <div
                   className={cn(
                     "overflow-hidden rounded-2xl border border-slate-200 bg-white",
@@ -266,7 +266,7 @@ export function MultiClipStudio({
                       <h3 className="mt-4 text-xl font-semibold text-slate-950">
                         Upload a couple clips and make something real
                       </h3>
-                      <p className="mt-2 text-sm leading-6 text-slate-600">
+                      <p className="mt-2 text-sm leading-6 text-slate-700">
                         The point of this screen is simple: show that the product works, that the
                         edit flow is understandable, and that the builder behind it knows taste.
                       </p>
@@ -283,7 +283,7 @@ export function MultiClipStudio({
                   ].map(([label, value]) => (
                     <div key={label} className="rounded-2xl border border-slate-200 bg-white p-3">
                       <p className="text-lg font-semibold text-slate-950">{value}</p>
-                      <p className="mt-1 text-xs text-slate-500">{label}</p>
+                      <p className="mt-1 text-xs text-slate-700">{label}</p>
                     </div>
                   ))}
                 </div>
@@ -293,7 +293,7 @@ export function MultiClipStudio({
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-slate-900">Clip order</p>
-                    <p className="mt-1 text-sm text-slate-500">
+                    <p className="mt-1 text-sm text-slate-700">
                       Reorder the sequence before creating the stitched result.
                     </p>
                   </div>
@@ -325,7 +325,7 @@ export function MultiClipStudio({
 
                         <div className="min-w-0 flex-1">
                           <p className="truncate text-sm font-medium text-slate-900">{clip.file.name}</p>
-                          <div className="mt-1 flex flex-wrap gap-2 text-xs text-slate-500">
+                          <div className="mt-1 flex flex-wrap gap-2 text-xs text-slate-700">
                             <span>{clip.durationLabel}</span>
                             <span>{clip.sizeLabel}</span>
                           </div>
@@ -365,7 +365,7 @@ export function MultiClipStudio({
                     <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-8 text-center">
                       <Sparkles className="mx-auto h-5 w-5 text-slate-400" />
                       <p className="mt-3 text-sm font-medium text-slate-900">No clips yet</p>
-                      <p className="mt-1 text-sm text-slate-500">
+                      <p className="mt-1 text-sm text-slate-700">
                         Add two or more clips and this becomes a real editing queue.
                       </p>
                     </div>
@@ -403,7 +403,7 @@ export function MultiClipStudio({
                       <p
                         className={cn(
                           "mt-1 text-xs",
-                          selectedTheme === theme.id ? "text-slate-200" : "text-slate-500",
+                          selectedTheme === theme.id ? "text-slate-200" : "text-slate-700",
                         )}
                       >
                         {theme.caption}
@@ -415,7 +415,7 @@ export function MultiClipStudio({
 
               <div className="rounded-2xl border border-slate-200 bg-white p-4">
                 <p className="text-sm font-medium text-slate-900">Generated cuts</p>
-                <p className="mt-1 text-sm text-slate-500">
+                <p className="mt-1 text-sm text-slate-700">
                   These are the stitched pieces this demo surfaces from the uploaded material.
                 </p>
 
@@ -425,15 +425,15 @@ export function MultiClipStudio({
                       <div key={cut.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                         <div className="flex items-center justify-between">
                           <p className="text-sm font-medium text-slate-900">{cut.name}</p>
-                          <span className="rounded-full bg-white px-2.5 py-1 text-xs text-slate-500">
+                          <span className="rounded-full bg-white px-2.5 py-1 text-xs text-slate-700">
                             Cut {index + 1}
                           </span>
                         </div>
-                        <p className="mt-2 text-sm text-slate-500">Built from {cut.source}</p>
+                        <p className="mt-2 text-sm text-slate-700">Built from {cut.source}</p>
                       </div>
                     ))
                   ) : (
-                    <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
+                    <div className="rounded-2xl border border-dashed border-slate-400 bg-slate-100 p-4 text-sm text-slate-700">
                       Upload clips first and we will surface sample cuts here.
                     </div>
                   )}
@@ -452,7 +452,7 @@ export function MultiClipStudio({
                       ? "Space to show future features without cluttering the core demo"
                       : "Enough polish to show taste, product sense, and execution",
                   ].map((item) => (
-                    <div key={item} className="flex items-start gap-3 text-sm text-slate-600">
+                    <div key={item} className="flex items-start gap-3 text-sm text-slate-700">
                       <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-slate-900 text-white">
                         <Check className="h-3 w-3" />
                       </span>
